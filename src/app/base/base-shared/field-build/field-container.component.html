@@ -1,0 +1,4 @@
+<ng-container [ngSwitch]="config?.type">
+    <app-input-field #instanceRef *ngSwitchCase="'TEXT'"></app-input-field>
+    <app-select #instanceRef *ngSwitchCase="'SELECT'" ></app-select>
+</ng-container>

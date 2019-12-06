@@ -1,0 +1,8 @@
+<div class="form-group" *ngIf="visible">
+    <label >{{ label }}</label>
+    <select class="form-control form-control-sm"
+        [formControl]="control"
+        [required]="required">
+        <option *ngFor="let item of options" value="{{ item[valueKey] }}">{{ item[labelKey] }}</option>
+    </select>
+</div>
